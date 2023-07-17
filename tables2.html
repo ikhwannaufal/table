@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables 2</title>
+
+    <style>
+        table {
+            width:100%;
+            border-collapse: collapse;
+        }
+        
+        th {
+            border: 1px solid black;
+        }
+        td {
+            border: 1px dotted grey;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <table>
+       <caption>
+        <h3>Fruit Stocks Availability</h3>
+       </caption> 
+        <thead>
+            <tr>
+                <th>Fruit</th>
+                <th>Availability</th>
+                <th>Count</th>
+                <th>Unit Price</th>
+                <th>Total Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Banana</td>
+                <td rowspan="2">In stock</td>
+                <td>1</td>
+                <td>$3.99</td>
+                <td>$3.99</td>
+            </tr> 
+            <tr>
+                <td>Watermelon</td>
+                <!--<td>In Stock</td>-->
+                <td>2</td>
+                <td>$7.99</td>
+                <td>$15.98</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="4">Grandtotal</td>
+                <!--<td></td>-->
+                <!--<td></td>-->
+                <!--<td></td>-->
+                <td>$19.97</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
